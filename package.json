@@ -1,0 +1,20 @@
+{
+  "name": "@cinatra-ai/hitl-prompt-drive-skill",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "description": "Internal extraction prompt for the Cinatra chat prompt-window HITL drive — given an open agent HITL gate's flattened field schema and an operator's chat message, it returns exactly the gate field values the message supplies. Consumed server-side through the chat.hitl-prompt-drive capability, never injected into a run and never uploaded.",
+  "type": "module",
+  "files": [
+    "skills"
+  ],
+  "cinatra": {
+    "apiVersion": "cinatra.ai/v1",
+    "kind": "skill",
+    "displayName": "HITL Prompt Drive Skill",
+    "skillRole": "internal",
+    "dependencies": [],
+    "capabilities": {
+      "chat.hitl-prompt-drive": "chat-hitl-prompt-drive"
+    }
+  }
+}
